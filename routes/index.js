@@ -6,30 +6,28 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* Страница Коржика */
-router.get('/korzhik', function(req, res, next) {
-  res.render('cat', {
-    title: "Коржик",
-    picture: "/images/korzhik.png",
-    desc: "Средний котёнок в семье. Очень любит футбол. Любит бегать, прыгать и веселиться. Иногда делает такие вещи, что из них приходится выбираться всей семье. Одет в форму моряка."
+router.get('/real_version1', function(req, res, next) {
+  res.render('real', {
+    title: "Re-L-ребенок",
+    picture: "images/Real-child.jpg",
+    desc: "Ри-Л Мэйер — одна из главных героинь Ergo Proxy. Будучи следователем Бюро разведки в Ромдо, она подвергается нападению двух монстров и оказывается втянута в тайну Прокси. В конце концов она присоединяется к Винсенту Лоу и Пино в их поисках ответов."
   });
 });
-/* Страница Карамельки */
-router.get('/karamelka', function(req, res, next) {
-  res.render('cat', {
-    title: 'Карамелька',
-    picture: "/images/karamelka.jpeg",
-    desc: "Cамый младший член семьи. Коронная фраза — «Я знаю, что надо делать!». Носит красный бант и красное платье."
-});
-});
-/* Страница Компота */
-router.get('/kompot', function(req, res, next) {
-  res.render('cat', {
-    title: 'Компот',
-    picture: "/images/kompont.png",
-    desc: "Cтарший котёнок в семье. Ходит в школу. Очень любит грибы, читает про них энциклопедии. Любит игры на логику. Когда очень сильно огорчается, восклицает «Ну вот!» и начинает плакать. Обожает вкусно поесть. Носит зелёный костюм и шапку."
-});
+
+router.get('/real_version2', function(req, res, next) {
+  res.render('real', {
+    title: "Re-L-оригинал",
+    picture: "images/Real.jpg",
+    desc: "Более взрослая версия Ри-л."
+  });
 });
 
+router.get('/real_version3', function(req, res, next) {
+  res.render('real', {
+    title: "Real-клон",
+    picture: "images/Real-clone.jpg",
+    desc: "Реал — это перевоплощённый клон Монады, который хочет найти Эрго Прокси и воссоединиться с ним."
+  });
+});
 
 module.exports = router;
