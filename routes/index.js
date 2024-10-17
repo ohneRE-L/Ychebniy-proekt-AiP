@@ -6,20 +6,16 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* Страница Коржика*/
-router.get('/korzhik', function(req, res, next) {
-  res.send("<h1>Страница Коржика</h1>")
+router.get('/real_version1', function(req, res, next) {
+  res.send("<h1>Страница Real Версии 1</h1>")
 });
 
-/* Страница Карамельки */
-router.get('/karamelka', function(req, res, next) {
-  res.send("<h1>Страница Карамельки</h1>")
+router.get('/real_version2', function(req, res, next) {
+  res.send("<h1>Страница Real Версии 3</h1>")
 });
 
-/* Страница Компота */
-router.get('/kompot', function(req, res, next) {
-  res.send("<h1>Страница Компота</h1>")
+router.get('/real_version3', function(req, res, next) {
+  res.send("<h1>Страница Real Версии 3</h1>")
 });
-
 
 module.exports = router;
