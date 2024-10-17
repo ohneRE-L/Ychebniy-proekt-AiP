@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/korzhik', function(req, res, next) {
   res.render('cat', {
     title: "Коржик",
-    picture: "/images/korzhik.png",
+    picture: "images/korzhik.png",
     desc: "Средний котёнок в семье. Очень любит футбол. Любит бегать, прыгать и веселиться. Иногда делает такие вещи, что из них приходится выбираться всей семье. Одет в форму моряка."
   });
 });
