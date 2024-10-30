@@ -28,7 +28,7 @@ app.use((req, res, next) => {
   res.status(404).send(`
         <div style="text-align: center; margin-top: 50px;">
             <h1>Страница не найдена, другалёк.</h1>
-            <img src="/images/stop.jpg" alt="404 Image" style="width:300px;height:auto;">
+            <img src="/images/Real-404.jpg" alt="404 Image" style="width:300px;height:auto;">
         </div>
     `);
 });
